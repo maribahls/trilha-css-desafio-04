@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header { 
+    background: url("/assets/images/headerBackground.png") no-repeat center/cover ;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: #ffffff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2rem;
+    width: 200px;
+    margin: 0;
+    font-family: 'Luckiest Guy';
+}
+
+header p{
+    align-self: center;
+    margin: 0;
+    max-width: 750px;
+
+}
+
+.buttonHeader button {
+    align-self: center;
+    border-radius: 28px;
+    height: 50px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.butGray, .butWhite {
+    width: 100%;
+}
+
+.butGray {
+    color: #ffffff;
+    background-color: #23272A;
+}
+
+.buttonHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.butWhite {
+    color: #23272A;
+}
+
+#second, .first, #third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    gap: 15px;
+    padding: 25px;
+    color: #23272A;
+}
+
+.firstImage img, .thirdImage img {
+    max-width: 100%;
+} 
+
+.firstText, .thirdText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.firstText h2 {
+    font-size: 1.5rem;
+    width: 95%;
+    line-height: 32.66px;
+}
+
+.firstText p {
+    width: 95%;
+    max-width: 700px;
+    line-height: 21.79px;
+    color: #23272A;
+
+}
+
+.firstText h2, p {
+    margin: 0;
+}
+
+#second, #third {
+    background-color: #F6F6F6;
+}
+
+.thirdText h2 {
+    font-family: 'Luckiest Guy';
+    font-size: 2em;
+    line-height: 32px;
+}
+
+footer {
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+footer img {
+    width: 160px;
+}
+
+@media screen and (min-width: 900px){
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        width: 300px;
+    }
+
+    header p {
+        text-align: center;
+    }
+
+    .buttonHeader {
+        flex-direction: row;
+        width: auto;
+    }   
+ 
+    .buttonHeader button{
+        padding: 14px;
+        box-sizing: border-box;
+    }
+    
+    .butWhite{
+        min-width: 210px;
+    }
+
+    .butGray {
+        min-width: 290px;
+    }
+
+    .first {
+        flex-direction: row;
+        padding: 0;
+        gap: 0;
+    }
+
+    .firstText {
+        max-width: 400px;
+        width: 55%;
+    }
+
+    .firstText h2 {
+        font-size: 2.5rem;
+        line-height: 55px;
+    }
+
+    #second {
+        flex-direction: row-reverse;
+    }
+
+    #third {
+        align-items: center;
+    }
+
+    .thirdText p {
+        max-width: 800px;
+    }
+
+    .thirdText h2 {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    footer img {
+        width: 230px;
+    }
+}
